@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+// untuk mendeklarasi
+var div1 = $( "div" ).first();
+var div2 = $( "div" ).first().next();
+var div3 = $( "div" ).first().next().next();
+var div4 = $( "div" ).first().next().next().next();
+var div5 = $( "div" ).first().next().next().next().next();
+// mendeklarasikan fungsi
+div1.dblclick(function() {
+  div1.toggleClass( "ganti" );
+});
+div2.dblclick(function() {
+  div2.toggleClass( "ganti" );
+});
+div3.dblclick(function() {
+  div3.toggleClass( "ganti" );
+});
+div4.dblclick(function() {
+  div4.toggleClass( "ganti" );
+});
+div5.dblclick(function() {
+  div5.toggleClass( "ganti" );
+});
+});
+
+</script>
+<!-- desain kotak awal -->
+<style type="text/css">
+.kotak {
+width : 50px;
+height : 50px;
+background: yellow;
+border : 1px solid black;
+padding : 5px;
+margin:10px;
+float: left;
+}
+/*desain kotak jika berubah*/
+.kotak.ganti {
+    background: red;
+    color: black;
+  }
+
+</style>
+</head>
+<body>
+	<div class="kotak"></div>
+	<div class="kotak"></div>
+	<div class="kotak"></div>
+	<div class="kotak"></div>
+	<div class="kotak"></div>
+</body>
+</html>

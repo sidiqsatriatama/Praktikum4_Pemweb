@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		// perintah untuk menampilkan dan menyembunyikan foto
+		$(".sembunyi1").click(function(){
+			$("#foto1").hide("fast");
+		})
+		$(".tampil1").click(function(){
+			$("#foto1").show("slow");
+		})
+		$(".sembunyi2").click(function(){
+			$("#foto2").hide("fast");
+		})
+		$(".tampil2").click(function(){
+			$("#foto2").show("slow");
+		})
+	})
+
+</script>
+</head>
+<body>
+	<!-- button foto 1 -->
+Foto 1 : 
+<button class="sembunyi1">sembunyikan</button>
+<button class="tampil1">tampilkan</button>
+<!-- button foto 2 -->
+<p>Foto 2 : 
+<button class="sembunyi2">sembunyikan</button>
+<button class="tampil2">tampilkan</button>
+</p>
+<!-- menata foto 1 dan foto 2 agar terlihat pas -->
+<p><img id="foto1" src="car.jpg" style="max-width: 500px;max-height: 500px;"></p>
+<p><img id="foto2" src="daun.jpg" style="max-width: 500px;max-height: 500px;"></p>
+</body>
+
+</html>

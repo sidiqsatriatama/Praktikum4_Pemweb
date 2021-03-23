@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+//perintah untuk fade in dengan tempo slow
+$(".fadeIn").click(function() {
+	$("#kotak").fadeIn ("slow",function(){
+		jQuery('#kotak').css('opacity', '1');
+		});
+});
+//perintah untuk fade out dengan tempo slow
+$(".fadeOut").click(function() {
+	$("#kotak").fadeOut ("slow",function(){
+			
+		});
+});
+//perintah untuk fade out dengan tempo slow dan opacity 0.3
+$(".fadeTo").click(function() {
+	$("#kotak").fadeTo ("slow",0.3,function(){
+			
+		});
+});
+});
+</script>
+<!-- desain kotak -->
+<style type="text/css">
+#kotak {
+width : 50px;
+height : 50px;
+background: yellow;
+border : 1px solid black;
+padding : 5px;
+}
+</style>
+</head>
+<body>
+	<h1 id="kotak"></h1>
+	<!-- button untuk fade -->
+	<button class="fadeIn">fade In </button>
+	<button class="fadeOut">fade Out </button>
+	<button class="fadeTo">fade Out 0.3 </button>
+</body>
+</html>
